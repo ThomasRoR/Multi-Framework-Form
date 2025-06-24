@@ -12,7 +12,7 @@
 
 ### 🎬 Demonstração
 
-![Demo da Aplicação](https://cdn.discordapp.com/attachments/1014714594599653459/1385859113095008256/frameForm.gif?ex=68579960&is=685647e0&hm=d4f310a892aa9bd52fe43f7db1fbae8e1de71fc428489a7cb241ff9e2aa6d0d7&)
+![Demo da Aplicação](https://github.com/ThomasRoR/Multi-Framework-Form/blob/main/frameForm.gif?raw=true)
 
 ---
 
@@ -132,7 +132,7 @@ Esta não foi uma jornada simples! Vários desafios interessantes de desenvolvim
 * **Colisão de Variáveis Globais:** Builds minificados do React e Vue estavam declarando variáveis com o mesmo nome, causando erros. A solução foi configurar os builds do Vite para o formato `'iife'`, que isola cada componente em seu próprio escopo.
 * **Injeção de Estilo no Shadow DOM:** O CSS do Vue não era aplicado devido ao encapsulamento do Shadow DOM. A solução final e mais robusta foi importar o CSS como um texto (`?inline`) e injetá-lo manualmente com JavaScript na raiz do Shadow DOM do componente.
 * **Configuração de Build e Caminhos:** A maior parte da depuração envolveu garantir que os `outputPath` e `outDir` de cada ferramenta de build (Vite e Angular CLI) estivessem corretos e que o servidor estático conseguisse resolver os caminhos dos arquivos sem erros 404.
-* **Submódulos do Git:** Descobrimos e corrigimos o problema onde o Angular, ao ser criado, se tornou um submódulo do Git em vez de uma pasta comum.
+* **Submódulos do Git:** Descobri e corrigi o problema onde o Angular, ao ser criado, se tornou um submódulo do Git em vez de uma pasta comum.
 
 ---
 
